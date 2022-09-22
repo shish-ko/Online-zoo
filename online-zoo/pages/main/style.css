@@ -8,18 +8,18 @@
 a{
     text-decoration: none;
 }
-.orange:hover{
+nav a:hover, .orange a:hover{
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: underline;
 }
-.orange:visited{
+nav a:visited, .orange a:visited{
     color: #FFFFFF;
 }
-.current_page{
-    color: #F9804B;
+nav a, .orange a{
+    color: #FFFFFF;
 }
 h1{
     font-weight: 400;
@@ -621,13 +621,17 @@ label{
 .copyRights p{
     margin-top: 10px;
 }
-.contact a{
+.contact a, .contact a:visited, .copyRights a, .copyRights a:visited{
     color: #FFFFFF;    
 }
-.contact a:active{
-    color: #4B9200;
+.contact a:hover, .copyRights a:hover{
+    color: #4B9200;    
 }
-.contact a:visited{
-    color: #FFFFFF;    
+.contact a:hover div div{
+    background: #4B9200;    
 }
+.copyRights a:hover {
+    text-decoration: underline;
+}
+
 /* footer end */

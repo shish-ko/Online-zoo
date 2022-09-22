@@ -1,0 +1,416 @@
+@import url(../main/reset.css);
+
+/* common */
+.mainContainer{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+nav a:hover, .orange a:hover{
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: underline;
+}
+nav a:visited, .orange a:visited{
+    color: #FFFFFF;
+}
+nav a, .orange a{
+    color: #FFFFFF;
+}
+h1{
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;    
+    color: #FFFFFF;    
+    border: 1.18841px solid #FFFFFF;
+    margin-right: 63px;
+    display: inline-block;
+    padding: 3.55px 4.55px;
+    position: relative;
+}
+h1 img{
+    position: absolute;
+    left: 10px;
+    bottom: 9px;
+}
+h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FE9013;
+    margin-bottom: 20px;
+}
+h3{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+}
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+.white{
+    color: white;
+}
+button{
+    width: 298px;
+    height: 54px;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    border-radius: 25px
+}
+.roundButton{
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+}
+.straight{
+    border-radius: 5px;
+}
+button:hover{
+    background: #E47209
+}
+button:active{
+    background: #4B9200;
+}
+button:disabled{
+    background: #767474
+}
+/* header start */
+
+
+header{
+    background: #000000;
+    backdrop-filter: blur(2px);
+    height: 80px;
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    color: white;
+}
+
+ul{
+    display: flex;
+    gap: 58px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+/* header end */
+
+#pandaPic{
+    height: 390px;
+    background-image: url(../../assets/images/panda_bg.jpg);
+    background-position: center;
+}
+
+/* donation start */
+#donation{
+    padding-top: 40px;
+    padding-bottom: 180px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%);
+    color: #FFFFFF;
+}
+.subtitle{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.orang{
+    color: #FE9013;
+    margin-bottom: 60px;
+}
+.pick_feed_container{
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 62px;
+}
+.subtitle2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+    margin-bottom: 63px;
+    align-self: flex-start;
+    margin-left: 92px;
+}
+.quontity{
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+        
+}
+.diet_quontity{
+    font-size: 72px;
+    line-height: 80%;
+    margin-bottom: 11px;
+}
+.diets_for{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #333B41;
+}
+.for{
+    margin-left: 11px;
+    margin-right: 64px;
+}
+.amount{
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 48px;
+    margin-left: 96px;
+    text-align: left;
+    margin-bottom: 17px;
+}
+.donationContainer{
+    width: 976px;
+    height: 27px;
+    background: #404950;
+    border-radius: 2px;
+    margin-left: 96px;
+    position: relative;
+    margin-bottom: 98px;
+}
+.donationBar{
+    width: 93.75%;
+    margin: auto;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #72828E;
+    display: flex; 
+    justify-content: space-between;   
+    align-items: center;
+}
+.donationItem:first-child{
+    left: -3px;
+}
+.donationItem:last-child{
+    right: -4px;
+}
+.donationItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background: #FFEE2E;
+    background-clip: content-box;
+    padding: 4px;
+    border-radius: 50%;
+    box-sizing: content-box;
+}
+.donationAmount{
+    position: absolute;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    color: #333B41;
+    top: 32px;
+    text-transform: uppercase;
+}
+.currentDonation{
+    outline: #FE9013 solid 2px;
+    outline-offset: 9px;
+    border: #FE9013 solid 2px;
+}
+.currentAmount{
+    top: 34px;
+}
+#donation_amount{
+    width: 288px;
+    height: 54px;
+    background: transparent;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    /* padding: 16px auto 16px 9px; */
+    padding-left: 9px;
+    color: #929699;
+    font-weight: 400;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="radio"]{
+    height: 15px;
+}
+
+/* donation end */
+
+
+
+/* footer start */
+footer{
+    height: 443px;
+    background-color: #000000;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: #FFFFFF;
+}
+footer .mainContainer{
+    position: relative;
+}
+.logo{
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;    
+    color: #FFFFFF;    
+    border: 1.18841px solid #FFFFFF;
+    width: fit-content;
+    padding: 3.55px 4.55px;
+    position: relative;
+    margin-bottom: 68px;
+}
+.logo img{
+    position: absolute;
+    left: 10px;
+    bottom: 9px;
+}
+.subscribe {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+label{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    display: block;
+}
+#e-mail{
+    border: 1px solid #F9804B;
+    border-radius: 2px;
+    background-color: #000000;
+    height: 42px;
+    width: 228px;
+    color: #BDBDBD;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#e-mail:focus{
+    border: 1px solid #4B9200;
+}
+#e-mail:invalid {
+    border: 1px solid #D31414;
+    color: #D31414
+}
+#e-mail:valid:focus + .submit{
+    border: 1px solid #333B41;
+    color: #333B41;
+}
+.submit:active{
+    border: 1px solid #4B9200;
+    color: #4B9200;
+}
+
+.submit{
+    background: #F1F3F2;    
+    border-radius: 5px;
+    height: 42px;
+    width: 129px; 
+    border: 1px solid #D31414;
+    color: #D31414   
+}
+.submit:hover{
+    background: #dfebe5;
+}
+
+.footerContainer{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 44px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.contactItem div{
+    width: 26px;
+    height: 26px;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 12px;
+    position: relative;
+}
+.contactItem img{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footerContainer nav{
+    margin-left: 288px;
+    margin-right: 168px;
+}
+.copyRights{
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+}
+.copyRights p{
+    margin-top: 10px;
+}
+.contact a, .contact a:visited, .copyRights a, .copyRights a:visited{
+    color: #FFFFFF;    
+}
+.contact a:hover, .copyRights a:hover{
+    color: #4B9200;    
+}
+.contact a:hover div div{
+    background: #4B9200;    
+}
+.copyRights a:hover {
+    text-decoration: underline;
+}
+/* footer end */
