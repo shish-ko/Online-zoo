@@ -12,17 +12,17 @@
     <title>Donate</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="mainContainer">
             <div class="headerContainer">
                 <div class="menu">
-                    <a href="./index.html"><h1>PetStory<br><img src="../../assets/icons/bamboo.png" alt="logo"> online</h1></a>
+                    <h1><a href="../main/index.html">PetStory<br><img src="../../assets/icons/bamboo.png" alt="logo"> online</a></h1>
                     <nav>
                         <ul>
-                            <li><a href="./index.html"><span style="color: #F9804B;">About</span> </a></li>
+                            <li><a href="../main/index.html">About </a></li>
                             <li><a href="#" class="orange">Map</a> </li>
                             <li><a href="#" class="orange">Zoos</a></li>
-                            <li><a href="../donate/index.html" class="orange">Donate</a></li>
+                            <li><a href="../donate/index.html" class="orange"><span style="color: #F9804B;"> Donate</span></a></li>
                             <li><a href="#contacts" class="orange">Contact us</a> </li>
                         </ul>
                     </nav>
@@ -47,73 +47,81 @@
                             <div class="diets_for">Panda diet for the day.</div>
                         </div>
                         <img src="../../assets/icons/x_icon.png" alt="quontity" class="for">
-                        <img src="../../assets/icons/panda_widget1.png" alt="panda">
+                        <img src="../../assets/icons/panda_widget1.png" alt="panda" class="panda">
                     </div>
                     <p class="amount">Amount</p>
                     <div class="donationContainer">
                         <div class="donationBar">
                             <div class="donationItem">
                                 <div class="circle"></div>
+                                <div class="hoverLay"></div>
                                 <p class="donationAmount">$5000</p>
                             </div>
                             <div class="donationItem">
                                 <div class="circle"></div>
+                                <div class="hoverLay"></div>
                                 <p class="donationAmount">$2000</p>
                             </div> 
                             <div class="donationItem">
-                                <div class="circle currentDonation"></div>
-                                <p class="donationAmount currentAmount">$1000</p>
+                                <div class="circle"></div>
+                                <div class="hoverLay"></div>
+                                <p class="donationAmount">$1000</p>
                             </div> 
                             <div class="donationItem">
                                 <div class="circle"></div>
+                                <div class="hoverLay"></div>
                                 <p class="donationAmount">$500</p>
                             </div> 
                             <div class="donationItem">
                                 <div class="circle"></div>
+                                <div class="hoverLay"></div>
                                 <p class="donationAmount">$250</p>
                             </div> 
                             <div class="donationItem">
                                 <div class="circle"></div>
+                                <div class="hoverLay"></div>
                                 <p class="donationAmount">$100</p>
                             </div> 
                             <div class="donationItem">
                                 <div class="circle"></div>
+                                <div class="hoverLay"></div>
                                 <p class="donationAmount">$50</p>
                             </div> 
                             <div class="donationItem">
                                 <div class="circle"></div>
+                                <div class="hoverLay"></div>
                                 <p class="donationAmount">$25</p>
                             </div>
                         </div>
                     </div>
                     <form action="">
-                        <input type="number" maxLength="4" name="donation_amount" id="donation_amount" placeholder="Another amount" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                        <div>
-                            <label>
-                                <input type="radio" name="period" value="monthly">
-                                Monthly
-                            </label>
-                            <label>
-                                <input type="radio" name="period" value="once">
-                                Once
-                            </label>                            
+                        <div class="inputContainer">
+                            <img src="../../assets/icons/dollar.png" alt="dollars">
+                            <input type="number" maxLength="4" name="donation_amount" id="donation_amount" placeholder="Another amount" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        </div>                        
+                        <div class="radioButtons">                            
+                            <input type="radio" name="period" value="monthly" id="monthly">
+                            <label for="monthly">Monthly</label>
+                            <input type="radio" name="period" value="once" id="once" checked>
+                            <label for="once">Once</label>                            
                         </div>
                         
                         <button type="submit">Feed a friend now</button>
                     </form>
+                    <p class="share">Share with your friends on social networks</p>
                 </div>
             </div>
         </section>
     </main>
     <footer id="contacts">
         <div class="mainContainer">
-            <div class="logo">PetStory<br><img src="../../assets/icons/bamboo.png" alt="logo"> online</div> 
+            <div class="logo"><a href="../main/index.html">PetStory<br><img src="../../assets/icons/bamboo.png" alt="logo"> online</a></div> 
             <form class="subscribe">
                 <label for="e-mail">Subscribe to our news</label>
                 <input type="email" name="userE-mail" id="e-mail" placeholder="Enter your email">
                 <button type="submit" class="submit">submit</button>
             </form>
-            <button class="straight">donate for volunteers</button>
+            <a href="#header"><button class="straight">donate for volunteers</button></a>
             <div class="footerContainer">
                 <div class="contact">
                     <a href="https://www.facebook.com/"><div class="contactItem">
@@ -139,7 +147,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="./index.html"><span style="color: #F9804B;">About</span></a></li>
+                        <li><a href="../main/index.html">About</a></li>
                         <li><a href="#" class="orange">Map</a> </li>
                         <li><a href="#" class="orange">Zoos</a></li>                        
                         <li><a href="#contacts" class="orange">Contact us</a> </li>

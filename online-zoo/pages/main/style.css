@@ -521,6 +521,9 @@ footer .mainContainer{
     position: relative;
     margin-bottom: 68px;
 }
+a{
+    color: inherit;
+}
 .logo img{
     position: absolute;
     left: 10px;
