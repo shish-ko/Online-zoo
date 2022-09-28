@@ -470,3 +470,56 @@ label{
     text-decoration: underline;
 }
 /* footer end */
+
+@media  screen and (max-width: 1599px) {
+    .mainContainer{
+        max-width: 940px;
+    }
+    ul{
+        gap: 48px;
+    }
+    .footerContainer nav{
+        margin-left: 19%;
+        margin-right: 9.361%;
+    }
+    .subscribe{
+        right: 30px;
+    }
+    .subtitle2{
+        margin-left: 47px;
+    }
+    .donationContainer{
+        width: 810px;
+        margin-left: 65px;
+    }
+    .donation__5000{
+        display: none;
+    }
+    #donation{
+        padding-bottom: 30px;
+    }
+    .orang{
+        margin-bottom: 40px;
+    }
+    .pick_feed_container{
+        padding-top: 20px;
+        padding-bottom: 46px;
+    }
+    .pick_feed_container h2{
+        align-self: flex-start;
+        margin-left: 231px;
+        margin-bottom: 10px;
+    }
+    .amount{
+        margin-left: 65px;
+    }
+    .donationBar{
+        width: 98%;
+    }
+    .donation__2000 p, .donation__1000 p, .donation__500 p, .donation__250 p, .donation__100 p{
+        left: -10px;
+    }
+    .donationAmount{
+        top: 31px;
+    }
+}
