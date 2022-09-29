@@ -119,6 +119,19 @@ ul{
     display: flex;
     align-items: center;
 }
+.burger-container{
+    display: none;
+    flex-direction: column;
+    width: 18px;
+    height: 10px;
+    gap: 2px;    
+}
+.burger-line{
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
 
 /* header end */
 
@@ -521,5 +534,130 @@ label{
     }
     .donationAmount{
         top: 31px;
+    }
+}
+@media screen and (max-width: 999px) {
+    .mainContainer{
+        width: 93.75%;
+    }
+    .headerContainer{
+        padding-top: 1px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .designed-by{
+        display: none;
+    }
+    .burger-container{
+        display: flex;
+    }
+    #header{
+        height: 34px;
+    }
+    h1{
+        font-weight: 400;
+        font-size: 12.2899px;
+        line-height: 120%;
+        border: 0.768116px solid #FFFFFF;
+        padding: 0px;
+    }
+    h1 img {
+        position: absolute;
+        left: 1px;
+        bottom: 0px;
+    }
+    #pandaPic {
+        height: 335px;
+        background-position-x: -272px;
+    }    
+    #donation{
+        padding-top: 30px;
+        padding-bottom: 46px;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .subtitle{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .orang{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 130%;
+        margin-bottom: 30px;
+    }
+    .pick_feed_container{
+        padding: 30px 0 31px;
+    }
+    .pick_feed_container h2{
+        align-self: auto;
+        margin: 0;
+    }
+    .subtitle2{
+        margin: 20px 0 53px;
+
+    }
+    .donationContainer{
+        width: 100%;
+        margin: 0 auto 98px;
+    }
+    .amount{
+        margin: 41px auto 7px 10px ;
+    }
+    .donation__2000, .donation__1000 {
+        display: none;
+    }
+    .donationBar{
+        width: 87.3333%;
+    }
+    #donation_amount{
+        width: 180px;
+        height: 42px;
+    }
+    .donation__500 p, .donation__250 p, .donation__100 p {
+        left: -20px;
+    }
+    .inputContainer img {
+        right: 9px;
+        top: 10px;
+    }
+    .subscribe{
+        display: none;
+    }
+    .contact{
+        position: absolute;
+        top: 0;
+        right: 0;
+        gap: 20px;
+    }
+    .footerContainer nav{
+        margin: 0;
+    }
+    ul{
+        gap: 37px;        
+    }
+    .footerContainer{
+        margin-top: 57px;
+        justify-content: space-between;
+    }
+    footer{
+        padding-top: 13px;
+        padding-bottom: 12px;
+        height: 282px;
+    }
+    .logo{
+        margin-bottom: 32px;
+    }
+    .contact span{
+        display: none;
+    }
+    .contactItem div{
+        margin-right: 0;
     }
 }
