@@ -173,19 +173,18 @@ ul{
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
-    margin-bottom: 63px;
+    margin-bottom: 112px;
     align-self: flex-start;
     margin-left: 92px;
 }
+/*  */
 .quontity{
     color: black;
-    display: inline-block;
-    vertical-align: middle; 
-    transform: translateY(24px);   
+    display: inline-block; 
+    vertical-align: middle;
 }
 .diet_align{
     display: inline-block;
-    /* transform: translateY(14px); */
 }
 .diet_quontity{
     font-size: 72px;
@@ -201,9 +200,18 @@ ul{
 .for{
     margin-left: 11px;
     margin-right: 64px;
+    width: 14px;
+    height: 14px;
+    background: url('../../assets/icons/x_icon.png');
+    display: inline-block;
+    position: relative;
+    left: -8px;
+    top: -14px;
 }
 .panda{
     transform: translateX(-3px);
+    position: relative;
+    left: -8px;
 }
 .amount{
     font-size: 16px;
@@ -357,6 +365,9 @@ footer{
 }
 footer .mainContainer{
     position: relative;
+}
+.logo__line{
+    display: none;
 }
 .logo{
     font-weight: 400;
@@ -523,8 +534,13 @@ label{
         margin-left: 231px;
         margin-bottom: 10px;
     }
+    .diet{
+        position: relative;
+        right: 10px;
+    }
     .amount{
         margin-left: 65px;
+        margin-top: 37px;        
     }
     .donationBar{
         width: 98%;
@@ -553,6 +569,9 @@ label{
         display: flex;
     }
     #header{
+        position: fixed;
+        z-index: 6;
+        width: 100%;
         height: 34px;
     }
     h1{
@@ -568,8 +587,9 @@ label{
         bottom: 0px;
     }
     #pandaPic {
-        height: 335px;
-        background-position-x: -272px;
+        height: 369px;
+        background-position-x: -318px;
+        background-position-y: 12px;
     }    
     #donation{
         padding-top: 30px;
@@ -600,8 +620,12 @@ label{
         margin: 0;
     }
     .subtitle2{
-        margin: 20px 0 53px;
+        margin: 20px 0 92px;
 
+    }
+    .for{
+        left: -4px;
+        top: -8px;
     }
     .donationContainer{
         width: 100%;
@@ -659,5 +683,138 @@ label{
     }
     .contactItem div{
         margin-right: 0;
+    }
+}
+@media screen and (max-width: 639px) {
+    #pandaPic{
+        height: 221px;
+        background-position-x: -201px;
+        background-position-y: 12px;
+    }
+    .orang{
+        font-size: 24px;
+    }
+    .pick_feed_container{
+        padding: 20px 0 20px;
+    }
+    .pick_feed_container h2{
+        font-size: 24px;
+    }
+    .subtitle2{
+        font-size: 16px;
+        margin: 10px 0 42px;
+    }
+    .diet{
+        position: static;
+    }
+    .diet_quontity{
+        font-size: 40.6015px;
+        line-height: 80%;
+    }
+    .diets_for{
+        font-size: 9.02255px;
+        line-height: 140%;
+    }
+    .panda{
+        width: 50%;
+        position: static;
+    }
+    .for{
+        width: 7px;
+        height: 7px;
+        background-size: cover;
+        margin-left: 6px;
+        margin-right: 36px;
+    }
+    .amount{
+        margin: 4px auto 8px 0;
+    }
+    .donationContainer{
+        height: 13px;
+        margin-bottom: 51px;
+    }
+    .circle{
+        width: 5px;
+        height: 5px;
+    }
+    .donationBar{
+        height: 1px;
+    }
+    .hoverLay{
+        top: -20px;
+    }
+    .donationAmount{
+        font-size: 13px;
+        top: 15px;
+    }
+    .donation__500 p, .donation__250 p, .donation__100 p {
+        left: -10px;
+    }
+    .share{
+        letter-spacing: -0.1px;
+    }
+    .radioButtons{
+        margin-top: 22px;
+    }
+    #donation{
+        padding-bottom: 20px;
+    }
+    .circle::before {
+        display: none;
+        content: '';
+        position: absolute;
+        transform: translate(-4px, -4px);
+        width: 11px;
+        height: 11px;
+        outline: #FE9013 solid 1px;
+        outline-offset: 3px;
+        border: #FE9013 solid 1px;
+        border-radius: 50%;
+    }
+
+
+    footer{
+        padding: 20px 0 20px;
+        height: 334px;
+    }
+    .footerContainer{
+        flex-direction: column;
+        margin-top: 22px;
+        align-items: center;
+    }
+    .copyRights{
+        order: -1;
+        font-size: 15px;
+        line-height: 120%;
+        margin-bottom: 30px;
+        align-self: flex-end;
+    }
+    .contact{
+        top: 53px;
+        right: auto;
+        flex-direction: row;
+        order: -2;
+        gap: 30px   ;
+    }
+    .logo__line {
+        display: block;
+        font-weight: 400;
+        font-size: 19.0145px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        width: fit-content;
+        padding: 3.55px 4.55px;
+        position: relative;
+        margin: 0 auto 79px;
+    }
+    .logo__line img{
+        position: absolute;
+    }
+    .logo{
+        display: none;
+    }
+    ul{
+        gap: 30px;
     }
 }

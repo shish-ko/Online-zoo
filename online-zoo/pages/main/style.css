@@ -178,6 +178,9 @@ ul{
     position: relative; 
     padding-top: 140px;
 }
+#backstage button{
+    display: none;
+}
 .backstageFlower{
     position: absolute;
     top: 12px;
@@ -799,6 +802,12 @@ label{
 }
 
 @media screen and (max-width: 999px) {
+    #header{
+        position: fixed;
+        z-index: 6;
+        width: 100%;
+        height: 34px;
+    }    
     .mainContainer{
         width: 93.75%;
     }
@@ -813,10 +822,7 @@ label{
     }
     .burger-container{
         display: flex;
-    }
-    #header{
-        height: 34px;
-    }
+    }    
     h1{
         font-weight: 400;
         font-size: 12.2899px;
@@ -830,8 +836,8 @@ label{
         bottom: 0px;
     }
     #watch{
-        height: 339px;
-        padding-top: 10px;
+        height: 373px;
+        padding-top: 44px;
     }
     .circle{
         width: 238px;
@@ -1046,5 +1052,178 @@ label{
     }
     .contactItem div{
         margin-right: 0;
+    }
+}
+@media screen and (max-width: 639px) {
+    .circle{
+        width: 119px;
+        height: 119px;
+    }
+    .circle div{
+        font-size: 28px;
+        top: 19px;
+        left: 19px;
+    }
+    #watch{
+        height: 187px;
+        padding-top: 22px;
+    }
+    main{
+        padding-top: 34px;
+    }
+    #watch button{
+        display: none;
+    }
+    #backstage{
+        padding-top: 20px;
+    }
+    #backstage button{
+        display: block;
+        margin: 0 auto 20px;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 10px;
+    }
+    h5{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .backstage_article{
+        width: 100%;
+    }
+    .backstageFlower{
+        background-image: url('../../assets/icons/flower_foto1.png');
+        top: 38px;
+        height: 217px;
+        width: 41px;
+    }
+    .backstage_article_head{
+        width: 93%;
+    }
+    .left, .right{
+        display: none;
+    }
+    .petsItem{
+        width: 95%;
+    }
+    .pets{
+        row-gap: 20px;
+    }
+    .petsContainer{
+        margin-top: 40px;
+    }
+    #pets .mainContainer{
+        padding-bottom: 60px;
+    }
+    .favouriteButton{
+        margin-top: 20px;
+    }
+    .petsImg1{
+        width: 43%;
+        transform: translate(-58%, 0);
+    }
+    #pick_and_feed .mainContainer{
+       max-width: 93.75%;
+    }
+    .pick_and_feed_title{
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .pick_and_feed_subtitle1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .pick_and_feed_subtitle2, .pick_and_feed_subtitle3{
+        display: none;
+    }
+    .pick_and_feed_container h3{
+        font-size: 24px;
+    }
+    .stepsContainer{
+        flex-direction: column;
+        width: fit-content;
+        gap: 23px;
+    }
+    .stepsItem p{
+        margin-top: 10px;
+        height: 44px;
+    }
+    .stepsItem:first-child::before {
+        content: url("../../assets/icons/green_arrow.png");
+        position: absolute;
+        right: 87%;
+        bottom: -95%;
+        transform: rotate(90deg);
+        z-index: 2;
+    }
+    .stepsItem:last-child::before {
+        content: url('../../assets/icons/green_arrow.png');
+        position: absolute;
+        right: -270px;
+        top: 72%;
+        z-index: 2;
+        transform: rotate(90deg);
+    }
+    .pick_and_feed_container{
+        padding: 20px 0 40px;
+    }
+
+    #testimonials{
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    #testimonials img{
+        bottom: -40px;
+    }
+    .sliderContainer{
+        min-width: 300px;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+    footer{
+        padding: 20px 0 20px;
+        height: 334px;
+    }
+    .footerContainer{
+        flex-direction: column;
+        margin-top: 22px;
+        align-items: center;
+    }
+    .copyRights{
+        order: -1;
+        font-size: 15px;
+        line-height: 120%;
+        margin-bottom: 30px;
+        align-self: flex-end;
+    }
+    .contact{
+        top: 53px;
+        right: auto;
+        flex-direction: row;
+        order: -2;
+        gap: 30px   ;
+    }
+    .logo__line {
+        font-weight: 400;
+        font-size: 19.0145px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        width: fit-content;
+        padding: 3.55px 4.55px;
+        position: relative;
+        margin: 0 auto 79px;
+    }
+    .logo__line img{
+        position: absolute;
+    }
+    .logo{
+        display: none;
+    }
+    ul{
+        gap: 30px;
     }
 }
