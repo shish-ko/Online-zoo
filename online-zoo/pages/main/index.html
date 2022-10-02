@@ -17,7 +17,7 @@
             <div class="headerContainer">
                 <div class="menu">
                     <h1><a href="#header">PetStory<br><img src="../../assets/icons/bamboo.png" alt="logo"> online</a></h1>
-                    <nav>
+                    <nav class="header-nav">
                         <ul>
                             <li><a href="#header"><span style="color: #F9804B;">About</span> </a></li>
                             <li><a href="#" class="orange">Map</a> </li>
@@ -27,7 +27,12 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="orange"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" >Designed by ©</a> </div>
+                <div class="orange designed-by"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" >Designed by ©</a> </div>
+                <div class="burger-container">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -42,18 +47,24 @@
         </section>
         <section id="backstage">
             <div class="mainContainer">
+                <button>watch online</button>
                 <div class="backstageContainer">
-                    <img src="../../assets/images/bamboo-cap.jpg" alt="old man">
-                    <div>
-                        <h2>The Backstage of the Wilderness World.</h2>
-                        <p>The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
+                    <div class="backstage_img"></div>
+                    
+                    <div class="backstage_article">
+                        <div class="backstage_article_head">
+                            <h2>The Backstage of the Wilderness World.</h2>
+                            <p>The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
+                        
+                        </div>
                         <h5>How it works </h5>
                         <p>The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
                     </div>
                 </div>
 
             </div>
-           <img src="../../assets/images/flower_foto1.jpg" alt="plant photo" class="backstageFlower"> 
+            <div class="backstageFlower"></div>
+           <!-- <img src="../../assets/images/flower_foto1.jpg" alt="plant photo" class="backstageFlower">  -->
         </section>
         <section id="pets">
             <div class="mainContainer">
@@ -179,19 +190,19 @@
                     <p class="pick_and_feed_title">Pick and feed a friend</p>
                     <p class="pick_and_feed_subtitle1">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
                     <p class="pick_and_feed_subtitle2">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
-                    <p class="pick_and_feed_subtitle3">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider<br>a gift to our <a href="../donate/index.html">Emergency Support Fund</a> . </p>
+                    <p class="pick_and_feed_subtitle3">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a href="../donate/index.html">Emergency Support Fund</a> . </p>
                     <h3>How it works</h3>
                     <div class="stepsContainer">
                         <div class="stepsItem">
                             <div class="stepsImgContainer stepOne"></div>
                             <p>Pay with card</p>
                         </div>
-                        <img src="../../assets/icons/stepsArrow.png" alt="next">
+                        <img src="../../assets/icons/stepsArrow.png" alt="next" class="pick-and-feed_next-arrow">
                         <div class="stepsItem">
                             <div class="stepsImgContainer stepTwo"></div>
                             <p>Payment goes to the zoo</p>
                         </div>
-                        <img src="../../assets/icons/stepsArrow.png" alt="next">
+                        <img src="../../assets/icons/stepsArrow.png" alt="next" class="pick-and-feed_next-arrow">
                         <div class="stepsItem">
                             <div class="stepsImgContainer stepThree"></div>
                             <p>Your favourite animal gets delicious dish</p>
@@ -270,13 +281,14 @@
                 <div class="position_tracker">
                     <div class="current_position"></div>
                 </div>
-                <button class="straight">leave feedback</button>
+                <button class="straight testimonials_button">leave feedback</button>
             </div>
             <img src="../../assets/images/leav_foto.jpg" alt="plant" class="testimonialsImg">
         </section>
     </main>
     <footer id="contacts">
         <div class="mainContainer">
+            <div class="logo__line"><a href="#header"> PetStory<img src="../../assets/icons/bamboo.png" alt="logo"> online</a></div> 
             <div class="logo"><a href="#header"> PetStory<br><img src="../../assets/icons/bamboo.png" alt="logo"> online</a></div> 
             <form class="subscribe">
                 <label for="e-mail">Subscribe to our news</label>
@@ -307,7 +319,7 @@
                         </div><span>YouTube</span>
                     </div></a>
                 </div>
-                <nav>
+                <nav class="footer-nav">
                     <ul>
                         <li><a href="#header"><span style="color: #F9804B;">About</span></a></li>
                         <li><a href="#" class="orange">Map</a> </li>

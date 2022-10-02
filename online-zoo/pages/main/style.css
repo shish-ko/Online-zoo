@@ -119,7 +119,19 @@ ul{
     display: flex;
     align-items: center;
 }
-
+.burger-container{
+    display: none;
+    flex-direction: column;
+    width: 18px;
+    height: 10px;
+    gap: 2px;    
+}
+.burger-line{
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
 /* header end */
 
 /* watch start */
@@ -166,18 +178,32 @@ ul{
     position: relative; 
     padding-top: 140px;
 }
+#backstage button{
+    display: none;
+}
 .backstageFlower{
     position: absolute;
     top: 12px;
     right: 0;
+    background-image: url('../../assets/images/flower_foto1.jpg');
+    width: 200px;
+    height: 605px;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .backstageContainer{
     display: flex;
     justify-content: space-between;
 
 }
-.backstageContainer div{
-    width: 465px;
+.backstage_article{
+    width: 40.086%;
+}
+.backstage_img{
+    background-image: url('../../assets/images/bamboo-cap.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 609px;
 }
 h5{
     font-family: 'Roboto';
@@ -210,6 +236,7 @@ h5{
     bottom: 0;
     left: 0;
     z-index: -2;
+    transform: translate(-50%, 0);
 }
 .petsImg2{
     position: absolute;
@@ -311,6 +338,7 @@ h5{
     transition: all .4s;
     position: relative;
     z-index: 2;
+    width: 100%;
 }
 
 /* pets end */
@@ -646,3 +674,556 @@ label{
 }
 
 /* footer end */
+
+@media  screen and (max-width: 1599px) {
+    .mainContainer{
+        max-width: 940px;
+    }
+    ul{
+        gap: 48px;
+    }
+    .backstageFlower{
+        display:none;
+    }
+    .circle{
+        width: 367px;
+        height: 367px;
+        margin-left: 45.3191%;
+        margin-top: -11px;
+    }
+    #watch{
+        font-size: 85px;
+        padding-top: 0;
+        height: 515px;
+    }
+    .circle div{
+        left: 78px;
+        top: 54px;
+    }
+    #watch button{
+        margin-left: 56.915%;
+        margin-top: 47px;
+    }
+    .circle span{
+        position: relative;
+        left: -12px;
+    }
+    #backstage{
+        padding-top: 109px;
+    }
+    .backstage_img{
+        background-image: url('../../assets/images/bamboo-cap_1000.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 48.40%;
+    }
+    .backstage_article{
+        width: 48.40%;
+    }
+
+    .pets{
+        row-gap: 93px;
+    }
+    .petsItem{
+        width: 31.38%;
+    }
+    .petsContainer{
+        margin-top: 152px;
+    }
+    .left{
+        left: 34.41%
+    }
+    .right{
+        right: 34.31%;
+    }
+    .petsImg1{
+        width: 38.6%;
+    }
+    .petsImg2{
+        width: 24.1%;
+    }
+    #pets .mainContainer{
+        padding-bottom: 140px;
+    }
+
+    #pick_and_feed{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .pick_and_feed_container{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .pick_and_feed_subtitle1{
+        margin: 20px auto 20px 49px;
+    }
+    .pick_and_feed_subtitle2{
+        margin-left: 49px;
+        margin-right: 78px;
+    }
+    .pick_and_feed_subtitle3{
+        margin-left: 49px;
+        margin-bottom: 40px;
+        margin-right: 68px;
+    }
+    .stepsContainer{
+        width: 81.276%;
+        margin: 40px auto 70px;
+    }
+    #testimonials{
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
+    .track{
+        gap: 29px;
+    }
+    .sliderItem{
+        min-width: 294px;
+    }
+    .position_tracker{
+        width: 41.489%;
+        margin: 21px auto 52px;
+    }
+    #testimonials h3{
+        margin-bottom: 30px;
+    }
+    .testimonialsImg {
+        bottom: -90px;
+        right: 0;
+        width: 20%;
+    }
+    .footerContainer nav{
+        margin-left: 19%;
+        margin-right: 9.361%;
+    }
+    .subscribe{
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #header{
+        position: fixed;
+        z-index: 6;
+        width: 100%;
+        height: 34px;
+    }    
+    .mainContainer{
+        width: 93.75%;
+    }
+    .headerContainer{
+        padding-top: 1px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .designed-by{
+        display: none;
+    }
+    .burger-container{
+        display: flex;
+    }    
+    h1{
+        font-weight: 400;
+        font-size: 12.2899px;
+        line-height: 120%;
+        border: 0.768116px solid #FFFFFF;
+        padding: 0px;
+    }
+    h1 img {
+        position: absolute;
+        left: 1px;
+        bottom: 0px;
+    }
+    #watch{
+        height: 373px;
+        padding-top: 44px;
+    }
+    .circle{
+        width: 238px;
+        height: 238px;
+        margin-left: 51.666%;
+        margin-top: 0;
+    }
+    .circle div{
+        font-size: 54.2894px;
+        line-height: 75%;
+        left: 46px;
+        top: 37px;
+    }
+    .circle span{
+        left: 0;
+    }
+    #watch button{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .backstage_img{
+        display: none;
+    }
+    .backstageFlower{
+        display: block;
+        background-image: url('../../assets/images/flower_foto1_640.jpg');
+        top: 0;
+        height: 476px;
+        width: 128px;
+
+    }
+    .backstage_article{
+        width: 79%;
+    }
+    #backstage{
+        padding-top: 60px;
+    }
+    h5{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+   .petsContainer{
+        margin-top: 80px;
+    }
+    .petsItem{
+        width: 47.5%;
+    }
+    .petsItem:first-child, .petsItem:last-child {
+        display: none;
+    }
+    .left{
+        left: 37.1667%;
+    }
+    .right{
+        right: 37.1667%;
+    }
+    .favouriteButton{
+        margin-top: 60px;
+    }
+    #pets .mainContainer{
+        padding-bottom: 100px;
+    }
+    .petsImg1{
+        width: 60%;
+        transform: translate(-65.19%, 0);
+    }
+    .petsImg2{
+        width: 27%;
+    }
+    
+    .description img{
+        transform: scale(.8);
+    }
+    .name{
+        font-size: 12px;
+        /* line-height: 100%; */
+    }
+    .location{
+        font-size: 10px;
+    }
+    .description{
+        align-items: flex-end;
+        margin: 3px 3px 9px 12px;
+    }
+    #pick_and_feed {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    #pick_and_feed .mainContainer{
+        width: 100%;
+    }
+    .pick_and_feed_container{
+        padding: 10px 20px 60px 20px;
+    }
+    .pick_and_feed_title{
+        font-size: 42px;
+        text-align: center;
+    }
+    .pick_and_feed_subtitle1{
+        font-size: 22px;
+    }
+    .pick_and_feed_subtitle1{
+        margin: 20px auto 20px;
+    }
+    .pick_and_feed_subtitle2{
+        margin: 0;
+    }
+    .pick_and_feed_subtitle3{
+        margin: 10px auto 30px;
+    }
+    .pick_and_feed_container h3{
+        text-align: center;
+    }
+    .stepsContainer{
+        margin: 20px auto 40px;
+        width: 590px;
+    }
+    .pick-and-feed_next-arrow{
+        display: none;
+    }
+    .stepsItem:first-child::before{
+        content: url('../../assets/icons/green_arrow.png');
+        position: absolute;
+        right: -60px;
+        top: -16px;
+        z-index: 2;
+    }
+    .stepsItem:last-child::before{
+        content: url('../../assets/icons/green_arrow.png');
+        position: absolute;
+        left: -75px;
+        top: -16px;
+        z-index: 2;
+    }
+    .stepsItem{
+        position: relative;
+    }
+    .pick_and_feed_container button{
+        display: block;
+        margin: 0 auto;
+    }
+    #testimonials{
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .track{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .sliderItem{
+        width: 100%;
+        height: 109px;
+        overflow: hidden;
+        padding: 12px 16px 0px 12px;
+    }
+    .sliderItem:last-child{
+        display: none;
+    }
+    .sliderContainer{
+        min-width: 600px;
+        max-width: 800px;
+        margin: 0 auto 40px;
+    }
+    .position_tracker{
+        display: none;
+    }
+    .testimonials_button{
+        display: block;
+        margin: 0 auto;
+    }
+    .testimonialsImg{
+        bottom: -70px;
+    }
+    q{
+        margin-top: 7px;
+        height: 37px;
+        margin-left: 4px;
+    }
+    .testimonials_button{
+        width: 240px;
+    }
+    .subscribe{
+        display: none;
+    }
+    .contact{
+        position: absolute;
+        top: 0;
+        right: 0;
+        gap: 20px;
+    }
+    .footerContainer nav{
+        margin: 0;
+    }
+    ul{
+        gap: 37px;        
+    }
+    .footerContainer{
+        margin-top: 57px;
+        justify-content: space-between;
+    }
+    footer{
+        padding-top: 13px;
+        padding-bottom: 12px;
+        height: 282px;
+    }
+    .logo{
+        margin-bottom: 32px;
+    }
+    .contact span{
+        display: none;
+    }
+    .contactItem div{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 639px) {
+    .circle{
+        width: 119px;
+        height: 119px;
+    }
+    .circle div{
+        font-size: 28px;
+        top: 19px;
+        left: 19px;
+    }
+    #watch{
+        height: 187px;
+        padding-top: 22px;
+    }
+    main{
+        padding-top: 34px;
+    }
+    #watch button{
+        display: none;
+    }
+    #backstage{
+        padding-top: 20px;
+    }
+    #backstage button{
+        display: block;
+        margin: 0 auto 20px;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 10px;
+    }
+    h5{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .backstage_article{
+        width: 100%;
+    }
+    .backstageFlower{
+        background-image: url('../../assets/icons/flower_foto1.png');
+        top: 38px;
+        height: 217px;
+        width: 41px;
+    }
+    .backstage_article_head{
+        width: 93%;
+    }
+    .left, .right{
+        display: none;
+    }
+    .petsItem{
+        width: 95%;
+    }
+    .pets{
+        row-gap: 20px;
+    }
+    .petsContainer{
+        margin-top: 40px;
+    }
+    #pets .mainContainer{
+        padding-bottom: 60px;
+    }
+    .favouriteButton{
+        margin-top: 20px;
+    }
+    .petsImg1{
+        width: 43%;
+        transform: translate(-58%, 0);
+    }
+    #pick_and_feed .mainContainer{
+       max-width: 93.75%;
+    }
+    .pick_and_feed_title{
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .pick_and_feed_subtitle1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .pick_and_feed_subtitle2, .pick_and_feed_subtitle3{
+        display: none;
+    }
+    .pick_and_feed_container h3{
+        font-size: 24px;
+    }
+    .stepsContainer{
+        flex-direction: column;
+        width: fit-content;
+        gap: 23px;
+    }
+    .stepsItem p{
+        margin-top: 10px;
+        height: 44px;
+    }
+    .stepsItem:first-child::before {
+        content: url("../../assets/icons/green_arrow.png");
+        position: absolute;
+        right: 87%;
+        bottom: -95%;
+        transform: rotate(90deg);
+        z-index: 2;
+    }
+    .stepsItem:last-child::before {
+        content: url('../../assets/icons/green_arrow.png');
+        position: absolute;
+        right: -270px;
+        top: 72%;
+        z-index: 2;
+        transform: rotate(90deg);
+    }
+    .pick_and_feed_container{
+        padding: 20px 0 40px;
+    }
+
+    #testimonials{
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    #testimonials img{
+        bottom: -40px;
+    }
+    .sliderContainer{
+        min-width: 300px;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+    footer{
+        padding: 20px 0 20px;
+        height: 334px;
+    }
+    .footerContainer{
+        flex-direction: column;
+        margin-top: 22px;
+        align-items: center;
+    }
+    .copyRights{
+        order: -1;
+        font-size: 15px;
+        line-height: 120%;
+        margin-bottom: 30px;
+        align-self: flex-end;
+    }
+    .contact{
+        top: 53px;
+        right: auto;
+        flex-direction: row;
+        order: -2;
+        gap: 30px   ;
+    }
+    .logo__line {
+        font-weight: 400;
+        font-size: 19.0145px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        width: fit-content;
+        padding: 3.55px 4.55px;
+        position: relative;
+        margin: 0 auto 79px;
+    }
+    .logo__line img{
+        position: absolute;
+    }
+    .logo{
+        display: none;
+    }
+    ul{
+        gap: 30px;
+    }
+}
