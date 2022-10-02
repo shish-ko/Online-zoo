@@ -560,6 +560,9 @@ footer .mainContainer{
 a{
     color: inherit;
 }
+.logo__line{
+    display: none;
+}
 .logo img{
     position: absolute;
     left: 10px;
@@ -1216,6 +1219,7 @@ label{
         padding: 3.55px 4.55px;
         position: relative;
         margin: 0 auto 79px;
+        display: block;
     }
     .logo__line img{
         position: absolute;
