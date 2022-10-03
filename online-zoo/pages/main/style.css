@@ -815,7 +815,7 @@ label{
         width: 93.75%;
     }
     .headerContainer{
-        padding-top: 1px;
+        padding-top: 2px;
     }
     .header-nav{
         display: none;
@@ -830,7 +830,7 @@ label{
         font-weight: 400;
         font-size: 12.2899px;
         line-height: 120%;
-        border: 0.768116px solid #FFFFFF;
+        border: none;
         padding: 0px;
     }
     h1 img {
@@ -855,7 +855,7 @@ label{
         top: 37px;
     }
     .circle span{
-        left: 0;
+        left: -5px;
     }
     #watch button{
         margin-left: 0;
