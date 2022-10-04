@@ -95,7 +95,8 @@ const testimonialsTrack = document.querySelector('.track')
 const testinomialsInput = document.querySelector('.styled-slider');
 for (let item in testimonials) {
     const sliderItem = document.createElement('div');
-    sliderItem.classList.add('sliderItem')
+    sliderItem.classList.add('sliderItem');
+    sliderItem.id=`quote_${item}`;
     sliderItem.innerHTML = ` <div class="SI_head">
     <img src="${testimonials[item].logo}" alt="${testimonials[item].name}">
     <div>
@@ -116,7 +117,7 @@ testinomialsInput.addEventListener('input', () => {
         testimonialsTrack.style.transform = `translateX(${-testinomialsInput.value * 323}px)`
     }
 })
-// testinomialsInput.setAttribute('max', 3)
+
 function setTestimInputProp(){
     if(document.getElementById('body').clientWidth < 1600){
         testinomialsInput.setAttribute('max', 8);
@@ -126,5 +127,29 @@ function setTestimInputProp(){
 }
 setTestimInputProp();
 
+// testimonials popUp
+document.querySelectorAll('.sliderItem').forEach(item=> item.addEventListener('click', (e)=>{
+   console.log(e.currentTarget.id); 
+}))
 
-document.getElementById('body').addEventListener('click', (e) => console.log(e.target))
+// burger
+const burger=document.querySelector('.burger-container');
+const closeLayer=document.querySelector('.grey-BG');
+
+burger.addEventListener('click', ()=>{
+    document.querySelector('.burger-menu').classList.add('burger-menu_active');
+    closeLayer.classList.add('burger-menu_active')
+})
+
+document.querySelector('.burger-menu').addEventListener('click', (e)=>{
+    if(e.target.id !=='qwe'){
+        document.querySelector('.burger-menu').classList.remove('burger-menu_active');
+        closeLayer.classList.remove('burger-menu_active');
+    }    
+})
+closeLayer.addEventListener('click', ()=>{
+    document.querySelector('.burger-menu').classList.remove('burger-menu_active');
+    closeLayer.classList.remove('burger-menu_active');
+})
+
+// document.getElementById('body').addEventListener('click', (e) => console.log(e))

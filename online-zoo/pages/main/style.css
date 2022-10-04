@@ -15,12 +15,31 @@ nav a:hover, .orange a:hover{
     background-clip: text;
     text-decoration: underline;
 }
-nav a:visited, .orange a:visited{
+.grey-BG{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(196, 196, 196, 0.5);
+    transform: translateX(100%);
+}
+.testimonials_popUp{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #396383;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    
+}
+/* nav a:visited, .orange a:visited{
     color: #FFFFFF;
 }
 nav a, .orange a{
     color: #FFFFFF;
-}
+} */
 h1{
     font-weight: 400;
     font-size: 19.0145px;
@@ -131,6 +150,66 @@ ul{
     height: 2px;
     background-color: #FFFFFF;
     border-radius: 2px;
+}
+.burger-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 10px 10px 40px;
+    color: #333B41;
+    z-index: 10;
+    transition: all ease-out .5s;
+    transform: translateX(100%);
+}
+.burger-menu_active{
+    transform: translateX(0);
+}
+.burger-nav_list{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.burger_logo{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;    
+    color: #FE9013;    
+    border: 1px solid #FE9013;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 3px 4px;
+    position: relative;
+    margin-bottom: 33px;
+}
+.burger_logo img{
+    position: absolute;
+    top: 19px;
+    left: 9px;
+}
+.burger-close{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+.burger-close_1{
+    min-width: 100%;
+    height: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: #FE9013;
+}
+.burger-close_2{
+    min-width: 100%;
+    height: 2px;
+    transform: rotate(315deg);
+    background-color: #FE9013;
 }
 /* header end */
 
@@ -874,7 +953,10 @@ label{
     }
     .burger-container{
         display: flex;
-    }    
+    }  
+    .burger-menu{
+        display: flex;
+    }  
     h1{
         font-weight: 400;
         font-size: 12.2899px;
