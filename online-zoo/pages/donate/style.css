@@ -16,11 +16,8 @@ nav a:hover, .orange a:hover{
     background-clip: text;
     text-decoration: underline;
 }
-nav a:visited, .orange a:visited{
-    color: #FFFFFF;
-}
-nav a, .orange a{
-    color: #FFFFFF;
+a:visited, a:active {
+    color: inherit;
 }
 h1{
     font-weight: 400;
@@ -61,6 +58,15 @@ body{
 .white{
     color: white;
 }
+.grey-BG{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(196, 196, 196, 0.5);
+    transform: translateX(100%);
+}
 button{
     width: 298px;
     height: 54px;
@@ -94,6 +100,24 @@ button:active{
 }
 button:disabled{
     background: #767474
+}
+.close-item{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.close-item__line1{
+    min-width: 100%;
+    height: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: #FE9013;
+}
+.close-item__line2{
+    min-width: 100%;
+    height: 2px;
+    transform: rotate(315deg);
+    background-color: #FE9013;
 }
 /* header start */
 
@@ -131,6 +155,50 @@ ul{
     height: 2px;
     background-color: #FFFFFF;
     border-radius: 2px;
+}
+.burger-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 10px 10px 40px;
+    color: #333B41;
+    z-index: 10;
+    transition: all ease-out .5s;
+    transform: translateX(100%);
+}
+.burger-menu_active{
+    transform: translateX(0);
+}
+.burger-nav_list{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.burger_logo{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;    
+    color: #FE9013;    
+    border: 1px solid #FE9013;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 3px 4px;
+    position: relative;
+    margin-bottom: 29px;
+}
+.burger_logo img{
+    position: absolute;
+    top: 19px;
+    left: 9px;
+}
+.burger-close{ 
+    position: relative;
+    top: 10px;
 }
 
 /* header end */
@@ -257,11 +325,10 @@ ul{
     background: #FFEE2E;
     border-radius: 50%;
 }
-.circle::before{
-    display: none;
-    content: '';
+.circle_checked{
+    display: none;    
     position: absolute;
-    transform: translate(-25%, -25%);
+    top: -3px;
     width: 16px;
     height: 16px;
     outline: #FE9013 solid 2px;
@@ -306,7 +373,7 @@ ul{
     color: #929699;
     font-weight: 400;
 }
-.donationItem:hover .circle::before{
+.circle_checked_active{
     display: block;
 }
 input::-webkit-outer-spin-button,
@@ -568,6 +635,9 @@ label{
     .burger-container{
         display: flex;
     }
+    .burger-menu{
+        display: flex;
+    } 
     #header{
         position: fixed;
         z-index: 6;

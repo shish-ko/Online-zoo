@@ -24,15 +24,59 @@ nav a:hover, .orange a:hover{
     background-color: rgba(196, 196, 196, 0.5);
     transform: translateX(100%);
 }
-.testimonials_popUp{
+.close-item_testimonials-popUp{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+.testimonials-popUp{
     position: fixed;
     top: 50%;
     left: 50%;
-    background-color: #396383;
-    width: 100px;
-    height: 100px;
-    transform: translate(-50%, -50%);
-    
+    transform: translate(-50%, -50%); 
+    display: none; 
+    z-index: 3;  
+}
+.display-block{
+    display: block;
+}
+.testimonials-popUp__item{
+    width: 268px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    box-shadow: inset 1000px 0px 0px #F1F3F2;
+    height: 391px;
+    padding: 15px 16px 19px;
+}
+.testimonials-popUp__quote{
+    margin-top: 11px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #767474;
+    overflow: hidden;
+    max-height: 309px;
+    display: block;
+    height: auto;
+}
+.close-item{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.close-item__line1{
+    min-width: 100%;
+    height: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: #FE9013;
+}
+.close-item__line2{
+    min-width: 100%;
+    height: 2px;
+    transform: rotate(315deg);
+    background-color: #FE9013;
 }
 /* nav a:visited, .orange a:visited{
     color: #FFFFFF;
@@ -184,32 +228,16 @@ ul{
     width: fit-content;
     padding: 3px 4px;
     position: relative;
-    margin-bottom: 33px;
+    margin-bottom: 29px;
 }
 .burger_logo img{
     position: absolute;
     top: 19px;
     left: 9px;
 }
-.burger-close{
-    width: 20px;
-    height: 20px;
+.burger-close{ 
     position: relative;
     top: 10px;
-    cursor: pointer;
-}
-.burger-close_1{
-    min-width: 100%;
-    height: 2px;
-    transform: rotate(45deg);
-    position: absolute;
-    background-color: #FE9013;
-}
-.burger-close_2{
-    min-width: 100%;
-    height: 2px;
-    transform: rotate(315deg);
-    background-color: #FE9013;
 }
 /* header end */
 
@@ -562,6 +590,7 @@ h5{
     box-shadow: inset 1000px 0px 0px #F1F3F2;
     height: 391px;
     padding: 15px 16px 19px;
+    cursor: pointer;
 }
 .SI_head{
     display: flex;
