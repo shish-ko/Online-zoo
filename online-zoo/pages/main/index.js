@@ -39,6 +39,7 @@ function fillPetsSlide(arr) {
     for (let i=0; i<itemsPerSlide(); i++) {
         const petsItem = document.createElement("div");
         petsItem.classList.add('petsItem');
+        petsItem.setAttribute('ontransitionend', 'event.stopPropagation()')
         petsItem.innerHTML = `<div class="petsItemPhotoWrapper">
                     <img src="${arr[i].image}" alt="${arr[i].name}" class="petsItemPhoto">
                 </div>                 
@@ -109,7 +110,6 @@ const testinomialsInput = document.querySelector('.styled-slider');
 for (let item in testimonials) {
     const sliderItem = document.createElement('div');
     sliderItem.classList.add('sliderItem');
-    sliderItem.id = `quote_${item}`;
     sliderItem.innerHTML = ` <div class="SI_head">
     <img src="${testimonials[item].logo}" alt="${testimonials[item].name}">
     <div>
@@ -142,8 +142,13 @@ function setTestimInputProp() {
 
 // testimonials popUp
 const testimolialsPopUp=document.querySelector('.testimonials-popUp');
-document.querySelectorAll('.sliderItem').forEach(item => item.addEventListener('click', (e) => {
-    const i = Number(e.currentTarget.id.replace(/\D/g, ''))
+testimonialsTrack.addEventListener('click', (event)=>{
+    console.log(event)
+    let clickedSliderItem=event.target.closest('div.sliderItem');
+    const i=Array.from(testimonialsTrack.children).indexOf(clickedSliderItem);
+    if(i<0){ 
+        return; // click on gap
+    }
     document.querySelector('.testimonials-popUp__content').innerHTML = `
     <div class="testimonials-popUp__item">
         <div class="SI_head">
@@ -159,7 +164,25 @@ document.querySelectorAll('.sliderItem').forEach(item => item.addEventListener('
     </div>`;
     testimolialsPopUp.classList.add('display-block');
     closeLayer.classList.add('burger-menu_active');
-}))
+})
+// document.querySelectorAll('.sliderItem').forEach(item => item.addEventListener('click', (e) => {
+//     const i = Number(e.currentTarget.id.replace(/\D/g, ''))
+//     document.querySelector('.testimonials-popUp__content').innerHTML = `
+//     <div class="testimonials-popUp__item">
+//         <div class="SI_head">
+//             <img src="${testimonials[i].logo}" alt="${testimonials[i].name}">
+//             <div>
+//                 <div class="SI_name">${testimonials[i].name}</div>
+//                     <span class="SI_location">${testimonials[i].location}</span>
+//                     <span class="SI_lastVisit">${testimonials[i].lastVisit}</span>
+//                 </div>
+                            
+//         </div>
+//         <q class="testimonials-popUp__quote">${testimonials[i].quote}</q>
+//     </div>`;
+//     testimolialsPopUp.classList.add('display-block');
+//     closeLayer.classList.add('burger-menu_active');
+// }))
 testimolialsPopUp.addEventListener('click', ()=>{
     testimolialsPopUp.classList.remove('display-block')
     closeLayer.classList.remove('burger-menu_active');

@@ -398,7 +398,7 @@ h5{
     top: -74px;
     border: 1px solid #000000 ;
     border-radius: 5px;
-    transition: all 800ms;
+    transition: transform 800ms;
 }
 .tooltip::before{
     position: absolute;
